@@ -1,4 +1,4 @@
-import * as Constants from '../../support/constants'
+import candidateObj from '../Pages/CandidatePage'
 
 class ChangeStatusActions {
 
@@ -7,7 +7,9 @@ class ChangeStatusActions {
     }
 
     clickStatusButton(Action:string){
-        cy.get('.oxd-form').find('.oxd-button').contains('button', Action).click({ force: true })
+        candidateObj.button
+        .contains(Action)
+        .click({ force: true })
 
     }
 

@@ -1,4 +1,4 @@
-import * as Constants from '../../support/constants'
+import changeStatusObj from '../Pages/ChangeStatusPage'
 
 class ChangeStatusAssertion {
 
@@ -7,7 +7,7 @@ class ChangeStatusAssertion {
     }
 
     statusChangePageAssertion(respectivePage:string){
-        cy.get('.orangehrm-background-container').contains(respectivePage).should('be.visible')
+        changeStatusObj.respectivePage.contains(respectivePage).should('be.visible')
 
     }
 

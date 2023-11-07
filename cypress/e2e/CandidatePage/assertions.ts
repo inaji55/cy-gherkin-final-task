@@ -1,5 +1,5 @@
 import * as Constants from '../../support/constants'
-
+import candidateObj from '../Pages/CandidatePage'
 class CandidateAssertion {
 
     constructor() {
@@ -9,9 +9,8 @@ class CandidateAssertion {
     buttonsExistAssertionInCandidatePage(actions: string) {
         const actionsArray = actions.split(",");
         if (actionsArray[0] === "null") {
-            cy.get('.oxd-form')
-                .find('div[class="orangehrm-recruitment-actions"]')
-                .should('be.empty');
+            candidateObj.buttonDiv
+            .should('be.empty');
         } else {
             actionsArray.forEach((status) => {
                 this.buttonAssertionInsideRecord(status)
@@ -19,9 +18,8 @@ class CandidateAssertion {
         }
     }
     buttonAssertionInsideRecord(buttonContains: string) {
-        return cy.get('.oxd-form')
-            .find('.oxd-button')
-            .contains('button', buttonContains)
+        return candidateObj.button
+            .contains(buttonContains)
             .should('be.visible');
     }
 
@@ -30,7 +28,7 @@ class CandidateAssertion {
         if(statusArr.length === 3){
             status = statusArr[0]+ " " +statusArr[1]
         }
-        cy.get('.oxd-form').find('.oxd-text--subtitle-2').should('have.text', "Status: " + status)
+        candidateObj.status.should('have.text', "Status: " + status)
     }
 
 }
