@@ -11,13 +11,13 @@ Feature: Recruitment Process Status Flow
         Examples:
             | Status                | Actions                                            |
             | Application Initiated | Shortlist,Reject                                   |
-            # | Shortlisted           | Schedule Interview,Reject                          |
-            # | Interview Scheduled   | Mark Interview Passed,Mark Interview Failed,Reject |
-            # | Interview Failed      | Reject                                             |
-            # | Interview Passed      | Schedule Interview,Offer Job,Reject                |
-            # | Interview Passed 2    | Offer Job,Reject                                   |
-            # | Job Offered           | Hire,Offer Declined,Reject                         |
-            # | Offer Declined        | Reject                                             |
-            # | Rejected              | null                                               |
-            # | Hired                 | null                                               |
+            | Shortlisted           | Schedule Interview,Reject                          |
+            | Interview Scheduled   | Mark Interview Passed,Mark Interview Failed,Reject |
+            | Interview Failed      | Reject                                             |
+            | Interview Passed      | Schedule Interview,Offer Job,Reject                |
+            | Interview Passed 2    | Offer Job,Reject                                   |
+            | Job Offered           | Hire,Offer Declined,Reject                         |
+            | Offer Declined        | Reject                                             |
+            | Rejected              | null                                               |
+            | Hired                 | null                                               |
 

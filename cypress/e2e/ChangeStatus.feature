@@ -11,12 +11,12 @@ Feature: Recruitment Process Status Flow
         Examples:
             | Action                | InitialStatus         | respectivePage        |
             | Shortlist             | Application Initiated | Shortlist Candidate   |
-            # | Reject                | Application Initiated | Reject Candidate      |
-            # | Schedule Interview    | Shortlisted           | Schedule Interview    |
-            # | Mark Interview Passed | Interview Scheduled   | Mark Interview Passed |
-            # | Mark Interview Failed | Interview Scheduled   | Mark Interview Failed |
-            # | Offer Job             | Interview Passed      | Offer Job             |
-            # | Offer Declined        | Job Offered           | Decline Offer         |
-            # | Hire                  | Job Offered           | Hire Candidate        |
+            | Reject                | Application Initiated | Reject Candidate      |
+            | Schedule Interview    | Shortlisted           | Schedule Interview    |
+            | Mark Interview Passed | Interview Scheduled   | Mark Interview Passed |
+            | Mark Interview Failed | Interview Scheduled   | Mark Interview Failed |
+            | Offer Job             | Interview Passed      | Offer Job             |
+            | Offer Declined        | Job Offered           | Decline Offer         |
+            | Hire                  | Job Offered           | Hire Candidate        |
 
 
